@@ -49,7 +49,7 @@ enum CombineImplementation {
     var packageDependencies: [Package.Dependency] {
         switch self {
         case .combine: return []
-        case .combineX: return [.package(url: "https://github.com/cx-org/CombineX", .upToNextMinor(from: "0.4.0"))]
+        case .combineX: return [.package(url: "https://github.com/MxIris-LyricsX-Project/CombineX", .branchItem("master"))]
         case .openCombine: return  [.package(url: "https://github.com/broadwaylamb/OpenCombine", .upToNextMinor(from: "0.12.0"))]
         }
     }
