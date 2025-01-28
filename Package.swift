@@ -25,11 +25,7 @@ enum CombineImplementation {
     case openCombine
     
     static var `default`: CombineImplementation {
-        #if canImport(Combine)
-        return .combine
-        #else
         return .combineX
-        #endif
     }
     
     init?(_ description: String) {
